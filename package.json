@@ -1,14 +1,15 @@
 {
   "name": "renting-house",
   "version": "0.1.0",
+  "homepage": "./",
   "private": true,
-  "homepage":"./",
   "dependencies": {
     "antd-mobile": "^2.3.1",
     "axios": "^0.19.0",
     "babel-plugin-import": "^1.12.2",
     "customize-cra": "^0.8.0",
     "node-sass": "^4.13.0",
+    "prop-types": "^15.7.2",
     "react": "^16.11.0",
     "react-app-rewired": "^2.1.5",
     "react-dom": "^16.11.0",
