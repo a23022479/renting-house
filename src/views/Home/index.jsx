@@ -13,6 +13,9 @@ import image4 from '../../assets/images/nav-4.png'
 // 导入组件
 import SearchHeader from "../../components/SearchHeader";
 
+// 获取定位城市
+import { getCity } from '../../utils/city'
+
 class Index extends Component {
   state = {
     swipers: null, //轮播图
@@ -27,7 +30,11 @@ class Index extends Component {
     { icon: image4, text: '去出租', path: '/rent/add' }
   ]
 
-  componentWillMount() {
+  async componentWillMount() {
+    const { label, value } = await getCity()
+    this.setState({
+      cityName: label
+    })
     // 轮播图
     this.getSwiper()
     // 租房小组
